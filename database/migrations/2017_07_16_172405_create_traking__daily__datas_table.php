@@ -20,7 +20,8 @@ class CreateTrakingDailyDatasTable extends Migration
             $table->double('low', 15, 8);
             $table->double('close', 15, 8);
             $table->string('volume');
-            $table->date('datetime'); 
+            $table->date('datetime');
+	    $table->bigInteger('trakingcodes_id'); 
             $table->timestamps();
         });
     }
